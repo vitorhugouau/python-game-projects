@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modern Landing Page</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: #f4f7fa;
+            color: #333;
+        }
+        header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            background: #1e40af;
+            padding: 1rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+        header .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            cursor: default;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #93c5fd;
+        }
+        main {
+            padding-top: 90px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3rem 1rem;
+        }
+        .hero-text {
+            max-width: 600px;
+        }
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #1e40af;
+        }
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #475569;
+        }
+        .btn-primary {
+            background-color: #1e40af;
+            color: white;
+            padding: 0.9rem 2rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(30, 64, 175, 0.3);
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #2563eb;
+            box-shadow: 0 6px 12px rgba(37, 99, 235, 0.5);
+        }
+        .hero-image img {
+            max-width: 400px;
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(30, 64, 175, 0.25);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+            gap: 2rem;
+            padding: 3rem 1rem;
+        }
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 14px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+            transition: transform 0.3s ease;
+            cursor: default;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 14px 28px rgba(0,0,0,0.12);
+        }
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: #1e40af;
+        }
+        footer {
+            background: #1e40af;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            user-select: none;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-image {
+                margin-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">BlueWave</div>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome to BlueWave</h1>
+                <p>Your solution for modern web experiences. Fast, scalable and beautiful.</p>
+                <button class="btn-primary">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Modern Web Design" />
+            </div>
+        </section>
+        <section id="features" class="features">
+            <div class="feature-card">
+                <h3>Responsive Design</h3>
+                <p>Looks great on all devices, from phones to desktops.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Fast Performance</h3>
+                <p>Optimized for speed to keep your users happy.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Easy Customization</h3>
+                <p>Flexible design options to fit your brand.</p>
+            </div>
+        </section>
+        <section id="about" style="padding: 3rem 1rem; max-width: 800px; margin: auto;">
+            <h2>About BlueWave</h2>
+            <p>BlueWave was created to empower developers to build sleek web applications with minimal fuss. Leveraging Python and Flask, this landing page template is lightweight and highly customizable.</p>
+        </section>
+        <section id="contact" style="padding: 3rem 1rem; max-width: 800px; margin: auto;">
+            <h2>Contact Us</h2>
+            <p>Email: contact@bluewave.com</p>
+            <p>Phone: +1 234 567 890</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 BlueWave. All rights reserved.
+    </footer>
+</body>
+</html>
