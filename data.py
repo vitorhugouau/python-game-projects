@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 
-# Dados dos destinos e preços
 DESTINOS = {
     "São Paulo": 500.0,
     "Rio de Janeiro": 450.0,
@@ -9,7 +8,6 @@ DESTINOS = {
     "Manaus": 850.0
 }
 
-# Multiplicadores por assento
 TIPOS_ASSENTO = {
     "Primeira Classe": 1.8,
     "Executiva": 1.3,
